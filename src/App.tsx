@@ -12,7 +12,7 @@ function App() {
 
   const handleSubmit = (data: Omit<MockItem, "id">) => {
     const newItem: MockItem = {
-      id: Date.now(),
+      id: Date.now() + Math.random(),
       ...data,
     };
     prependItem(newItem);
