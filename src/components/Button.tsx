@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ButtonProps {
   text: string;
   onClick?: () => void;
@@ -9,14 +7,14 @@ interface ButtonProps {
   className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Button = ({
   text,
   onClick,
   type = "button",
   variant = "primary",
   disabled = false,
   className = "",
-}) => {
+}: ButtonProps) => {
   const baseStyles =
     "px-4 py-2 rounded-lg font-medium focus:outline-none transition-colors";
   const variantStyles = {

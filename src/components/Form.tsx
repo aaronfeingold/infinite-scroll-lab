@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Button from "./Button";
 import type { MockItem } from "../utils/fetchMockData";
 
@@ -7,7 +7,7 @@ interface FormProps {
   onCancel: () => void;
 }
 
-const Form: React.FC<FormProps> = ({ onSubmit, onCancel }) => {
+const Form = ({ onSubmit, onCancel }: FormProps) => {
   const [formData, setFormData] = useState({
     title: "",
     description: "",
