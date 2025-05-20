@@ -1,4 +1,4 @@
-interface MockItem {
+export interface MockItem {
   id: number;
   title: string;
   description: string;
